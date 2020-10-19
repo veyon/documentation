@@ -19,6 +19,46 @@ If not using the second method in an automated manner on all computers, the upgr
 
 If configuration keys are renamed, the old keys are always kept for compatibility reasons allowing to switch back to a previous version more easily. There'll be a clean up mechanism in a future release which will remove all legacy configuration keys.
 
+Veyon 4.5
+---------
+
+Overview
+++++++++
+
+Most notably, Veyon 4.5 includes a new WebAPI plugin which allows accessing computers by 3rdparty products via HTTP. At the same time Veyon 4.5 focusses on application and desktop virtualization environments by delivering an extended and improved multi session mode. Additionally longstanding issues have been fixed and the file transfer plugin received a configuration page.
+
+* Core
+* Master
+* Configurator
+* Plugins
+* Windows
+
+Structural changes
+++++++++++++++++++
+
+There are no structural changes in Veyon 4.5.
+
+Configuration changes
++++++++++++++++++++++
+
+Several configuration keys have been renamed in Veyon 4.5. When upgrading to Veyon 4.5 or newer the new configuration keys will be populated with the value of the old keys automatically.
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Old name
+    - New name
+
+  * - ``Network/PrimaryServicePort``
+    - ``Network/VeyonServerPort``
+
+  * - ``Master/LocalComputerHidden``
+    - ``Master/HideLocalComputer``
+
+  * - ``Master/ComputerFilterHidden``
+    - ``Master/HideComputerFilter``
+
 Veyon 4.4
 ---------
 
